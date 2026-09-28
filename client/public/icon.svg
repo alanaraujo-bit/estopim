@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="ESTOPIM">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="40%" r="75%">
+      <stop offset="0%" stop-color="#2b1747"/>
+      <stop offset="70%" stop-color="#140c24"/>
+    </radialGradient>
+    <linearGradient id="fuse" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ff7a2f"/>
+      <stop offset="100%" stop-color="#ffd166"/>
+    </linearGradient>
+    <radialGradient id="spark" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff6d8"/>
+      <stop offset="45%" stop-color="#ffd166"/>
+      <stop offset="100%" stop-color="#ff7a2f" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+
+  <!-- corpo da bomba -->
+  <circle cx="232" cy="318" r="122" fill="#0d0718"/>
+  <circle cx="232" cy="318" r="122" fill="none" stroke="#ff7a2f" stroke-opacity=".35" stroke-width="10"/>
+  <circle cx="190" cy="274" r="34" fill="#ffd9a8" opacity=".16"/>
+
+  <!-- pavio aceso -->
+  <path d="M262 206 C 300 150, 352 170, 366 126" fill="none" stroke="url(#fuse)" stroke-width="22" stroke-linecap="round"/>
+
+  <!-- faisca -->
+  <circle cx="370" cy="112" r="62" fill="url(#spark)"/>
+  <circle cx="370" cy="112" r="20" fill="#fff6d8"/>
+</svg>

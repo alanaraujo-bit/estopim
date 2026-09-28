@@ -1,0 +1,21 @@
+{
+  "name": "ESTOPIM",
+  "short_name": "ESTOPIM",
+  "description": "Arena tática de explosivos. Campanha, multiplayer online e modos especiais direto no navegador.",
+  "lang": "pt-BR",
+  "start_url": "/",
+  "scope": "/",
+  "display": "fullscreen",
+  "display_override": ["fullscreen", "standalone"],
+  "background_color": "#140c24",
+  "theme_color": "#140c24",
+  "categories": ["games"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
