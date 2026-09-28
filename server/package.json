@@ -1,0 +1,23 @@
+{
+  "name": "@estopim/server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "esbuild src/index.ts --bundle --platform=node --format=esm --target=node20 --outfile=dist/index.js --packages=external --alias:@estopim/shared=../shared/src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "pg": "^8.23.0",
+    "ws": "^8.22.0"
+  },
+  "devDependencies": {
+    "@estopim/shared": "*",
+    "@types/pg": "*",
+    "@types/ws": "*",
+    "@types/node": "*",
+    "esbuild": "^0.28.2",
+    "tsx": "^4.23.15"
+  }
+}

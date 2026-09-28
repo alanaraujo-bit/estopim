@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#140c24" />
+    <meta name="description" content="ESTOPIM — arena tática de explosivos. Campanha, multiplayer online e modos especiais direto no navegador." />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>ESTOPIM</title>
+    <style>
+      html,body{margin:0;height:100%;background:#140c24;overflow:hidden}
+      #boot{position:fixed;inset:0;display:grid;place-items:center;background:radial-gradient(circle at 50% 40%,#2b1747,#140c24 70%);color:#ffd9a8;font:800 14px system-ui,sans-serif;letter-spacing:.3em;transition:opacity .4s}
+      #boot i{display:block;width:120px;height:4px;margin:14px auto 0;border-radius:4px;background:linear-gradient(90deg,#ff7a2f,#ffd166);animation:b 1s ease-in-out infinite alternate;transform-origin:left}
+      @keyframes b{from{transform:scaleX(.15)}to{transform:scaleX(1)}}
+    </style>
+  </head>
+  <body>
+    <div id="boot"><div>ACENDENDO O PAVIO<i></i></div></div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
